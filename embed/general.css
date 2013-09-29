@@ -1,0 +1,102 @@
+html, body, div, span {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	cursor: default;
+}
+body {
+	background-color: #ffffff;
+	color: #222222;
+	overflow: hidden;
+	font: 14px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+#head {
+	position: fixed;
+	width: auto;
+	height: 50px;
+	top: 0;
+	left: 0;
+	right: 300px;
+}
+#head > div {
+	position: relative;
+	height: 49px;
+	margin: 0 10px;
+	text-align: center;
+	border-bottom: 1px solid #cccccc;
+	padding: 0;
+	line-height: 49px;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#groups {
+	position: fixed;
+	background-color: #efefef;
+	border-left: 1px solid #cccccc;
+	width: 300px;
+	height: 100%;
+	top: 0;
+	right: 0;
+	overflow: auto;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+#content {
+	position: absolute;
+	width: auto;
+	height: auto;
+	left: 10px;
+	right: 310px;
+	top: 50px;
+	bottom: 0;
+	overflow: auto;
+}
+
+#content .post {
+	position: relative;
+	width: auto;
+	margin: 30px 0;
+	padding-bottom: 30px;
+	padding-right: 30px;
+	border-bottom: 1px solid #cccccc;
+	padding-left: 30px;
+}
+#content .post .head {
+	position: relative;
+	font-weight: bold;
+	margin-bottom: 20px;
+	cursor: pointer;
+	color: #992d29;
+}
+#content .post .head div {
+	position: absolute;
+	font-weight: normal;
+	color: #cccccc;
+	right: 0;
+	top: 0;
+}
+#content .post .message {
+	text-align: justify;
+	margin-left: 100px;
+}
+#content .post.repetitive:not(.end) {
+	border-bottom: none;
+	padding-bottom: 0;
+	margin-bottom: 10px;
+}
+#content .post.repetitive:not(.end) .message {
+	border-bottom: 1px solid #cccccc;
+	padding-bottom: 10px;
+}
+#content .post.repetitive:not(.start) {
+	margin-top: 10px;
+}
+#content .post.repetitive:not(.start) .head {
+	display: none;
+}
