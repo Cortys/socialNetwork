@@ -1,0 +1,16 @@
+#head, #content {
+	right: 0;
+}
+
+#head {
+	height: 100px;
+}
+#head > div {
+	height: 99px;
+	line-height: 99px;
+	font-size: 40px;
+}
+
+#content {
+	top: 100px;
+}

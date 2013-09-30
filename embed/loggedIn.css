@@ -1,0 +1,66 @@
+#groups {
+	position: fixed;
+	background-color: #efefef;
+	border-left: 1px solid #cccccc;
+	width: 300px;
+	height: 100%;
+	top: 0;
+	right: 0;
+	overflow: auto;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+#content .post {
+	position: relative;
+	width: auto;
+	margin: 30px 0;
+	padding-bottom: 30px;
+	padding-right: 30px;
+	border-bottom: 1px solid #cccccc;
+	padding-left: 30px;
+}
+#content .post .head {
+	position: relative;
+	font-weight: bold;
+	margin-bottom: 20px;
+	cursor: pointer;
+	color: #992d29;
+}
+#content .post .head div {
+	position: absolute;
+	font-weight: normal;
+	color: #cccccc;
+	right: 0;
+	top: 0;
+}
+#content .post .message {
+	text-align: justify;
+	margin-left: 100px;
+}
+
+#content .post .side {
+	position: relative;
+	top: 0;
+	left: 0;
+	float: left;
+	width: 80px;
+	height: 80px;
+	background: url(../images/profileDummy.png) 0 0 no-repeat #222222;
+}
+
+#content .post.repetitive:not(.end) {
+	border-bottom: none;
+	padding-bottom: 0;
+	margin-bottom: 10px;
+}
+#content .post.repetitive:not(.end) .message {
+	border-bottom: 1px solid #cccccc;
+	padding-bottom: 10px;
+}
+#content .post.repetitive:not(.start) {
+	margin-top: 10px;
+}
+#content .post.repetitive:not(.start) .head, #content .post.repetitive:not(.start) .side {
+	display: none;
+}
