@@ -1,3 +1,3 @@
 <?php
-	$login = false;
+	$login = true;
 ?>
